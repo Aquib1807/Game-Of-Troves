@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENDGAME</title>
+    <!-- <script src="devteam.js" defer></script>-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./../css/navbarResponsive.css" />
+    <link rel="stylesheet" href="./css/devteam.css" />
+    <link
+      rel="shortcut icon"
+      href="./../images/favicon2.ico"
+      type="image/x-icon"
+    />
+    <style>
+      * {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .code {
+        font-weight: 900;
+      }
+      body {
+        background-color: #663dff;
+        background-image: linear-gradient(
+          319deg,
+          #663dff 0%,
+          #aa00ff 37%,
+          #cc4499 100%
+        );
+        height: 100vh;
+        background-repeat: no-repeat;
+      }
+      .container {
+        background-color: white;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand code" style="color: white"><\GOT></a>
+          <img
+            class="logoImage d-flex"
+            role="search"
+            src="./../images/ojass-removebg-preview.png"
+          />
+        </div>
+      </nav>
+    </div>
+
+    <div class="container p-5">
+      <div>
+        <p class="abc">
+          <em>
+            <q>Congratulations! You've completed the Game of Troves!</q>
+
+            <q
+              >If you see this page, you've successfully navigated all the
+              challenges. Please report to the nearest volunteer to confirm your
+              completion.</q
+            >
+
+            <q
+              >Thank you for participating in the Game of Troves! We appreciate
+              your time and effort. While we process the results, please wait
+              patiently for further instructions.</q
+            > </em
+          ><br />
+          <q
+            >To go Back to Login Page Kindly Clear Cookies by pressing below
+            Button</q
+          >
+        </p>
+
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </div>
+    <section>
+      <button id="devteam" class="developer-team-btn">Developer Team</button>
+    </section>
+    <section>
+      <button
+        id="clearCookie"
+        class="developer-team-btn"
+        onclick="clearCookies()"
+      >
+        Clear Cookie
+      </button>
+      <script>
+        function clearCookies() {
+          // Get all cookies
+          var cookies = document.cookie.split(';');
+
+          // Iterate through each cookie and delete it
+          for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            var eqPos = cookie.indexOf('=');
+            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+            document.cookie =
+              name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+          }
+          alert(
+            'Cookies Cleared for the Site thank you for Participating Redirecting To Login Home !!!'
+          );
+          window.location.href = '/back-btn';
+        }
+      </script>
+    </section>
+    <script src="script/devteam.js"></script>
+  </body>
+</html>

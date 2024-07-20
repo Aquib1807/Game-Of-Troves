@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Troves</title>
+ 
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Roboto:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Roboto:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/navbarResponsive.css">
+  <link rel="shortcut icon" href="./../images/favicon2.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/devteam.css">
+  <style>
+    * {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    .code {
+      font-weight: 900;
+    }
+
+    .questions {
+      margin: 40px 50px;
+    }
+
+    
+  </style>
+</head>
+
+<body style="background-image: linear-gradient(to bottom, #ffffff 18%, #310369 100%);position: relative; height: 100%;">
+  <div>
+    <nav class="navbar navbar-expand-lg  ">
+      <div class="container-fluid">
+        
+        <h3 class="code"
+          style="font-family:Georgia, 'Times New Roman', Times, serif; color:rgb(39, 28, 39); text-align: center; ">
+          Ojass'24
+        </h3>
+        <button id="devteam" class="developer-team-btn">Developer Team</button>
+        <img class="logoImage" src="./images/ojass-removebg-preview.png" alt="OJASS_LOGO" width="150px">
+       
+      </div>
+     
+  </div>
+  </nav>
+  </div>
+  <div class="Snap" style=" text-align: center;  ">
+    <div class="container">
+
+      <div
+        style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top: 3vh; font-size:60px; border: none; color: #330867; "
+        class="card  "> Game of Troves </div>
+
+      <div class="rules "
+        style="margin-top: 20px;  padding-top: 2%; padding-left: 10px; padding-right: 10px;  padding-bottom: 30px; border-radius: 10px;  background-color: #ffffff; ">
+        <div style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px;">
+          <!-- <div style=" font-size:43px; margin: 40px 0px;"> <b class=" text-primary">Game of </b> <b>Troves !!!</b>
+          </div> -->
+          <b class="text-primary">Do You Like</b> <b>Surprises ?</b>
+          <div style="color: rgb(74 79 92); font-size: 23px; margin: 70px 120px; text-align: left;">
+          
+            What is Game of Troves?<br>
+            It's an online event fun event conducted by NEODRISHTI-OJASS. <br><br>
+          
+            Here's the lowdown:<br>
+          
+            <b>Teams:</b> Up to 50 teams can participate, with a maximum of 2 members per team.<br><br>
+            <b>Duration:</b> The event will last for 30 minutes, with 4 exciting rounds.<br><br>
+            <b>Rounds:</b>Each round will be packed with riddles that will challenge your wit. <br><br>
+            <b>Winning:</b> <b>First team to reach the final round wins!</b><br><br>
+            <b>Time Extension:</b> If no team reaches the final round within the time limit, a 10-minute extension may be granted.<br><br>
+            <b>Evaluation:</b> Even if no team reaches the final round, individual team progress will be evaluated.<br><br>
+            <b>Decision Makers:</b> The Game of Troves event heads and the NeoDrishti team will solely determine the final results.<br> <br>
+            <b>Fair Play:</b>Cheating is strictly prohibited. Volunteers will be monitoring the event, and any team caught cheating will be disqualified from the competition and barred from participating in other OJASS'24 events.<br><br>
+          
+            <b>This event is part of OJASS'24, the Techno-Management fest of NIT Jamshedpur. Get ready for a thrilling online adventure!</b>
+          
+          </div>
+          
+          
+
+        <div style="color: rgb(74 79 92); font-size: 23px; margin: 40px 60px;">
+          <b> 
+            Let's start the riddles by filling out your Team Name and Unique Team Id.
+            As you Login here by clicking on submit button, will get the first round
+            which is a Surprise box of multiple questions. Solve those questions and fill the boxes, if you solve them correctly, the final boxes will get filled automatically and you will reach one step closer to your destination.
+          </b>
+        </div>
+      </div>
+    </div>
+
+    <div class=" flex flex-column" style="margin-top:50px;margin-bottom: 150px;">
+        <form id="form">
+          <div class="p-3">
+            <input type="text" id="teamName" name="teamName" class=" m-2 p-2 rounded" placeholder="Team Name "  required>
+            <input type="text" id="teamId" name="teamId" class="p-2 m-23 rounded" placeholder="Team ID"  required>
+          </div>
+            <input type="submit" value="Submit" class="btn btn-outline-primary btn-lg bg-primary text-white" >
+        </form> 
+    </div>
+  </div>
+  
+  <div style="position: absolute; left: 76%; top: 82%; width: 270px; text-align: center;">
+    <img src="./images/hello.png" alt="hello image" width="100px" onmouseover="typeWriter()">
+    <div style=" background-color: white; border-radius: 8px;font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 600;" id="demoIdBox">
+        <div style="color: #310369;" id="text"></div>
+        <div style="color: #ffc83d; font-weight: 800; font-size: 24px;" id="demoId"></div>
+    </div>
+  </div>
+<script src="script/devteam.js"></script>
+  <script src="script/index.js"></script>
+
+</body>
+</html>

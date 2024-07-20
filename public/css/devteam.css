@@ -1,0 +1,74 @@
+.developer-team-btn {
+    background-color: transparent;
+    border: 2px solid #020f1e; /* Example color for border */
+    color: #c8d5e2; /* Example color for text */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto; /* Center align the button */
+    display: block; /* Make the button take the full width in smaller screens */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Remove underline from link */
+    text-align: center; /* Center text inside the button */
+    max-width: 200px; /* Set a max width for the button */
+}
+
+/* Hover effect */
+.developer-team-btn:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .developer-team-btn {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        margin: 10px auto; /* Reduce margin for smaller screens */
+        width: 80%; /* Make the button take up more width on smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .developer-team-btn {
+        font-size: 12px; /* Further adjust font size for very small screens */
+        padding: 6px 12px; /* Further adjust padding for very small screens */
+    }
+}
+
+/* back button*/
+
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Full viewport height */
+    background-color: #3f57ff;
+}
+
+/* Style the home button */
+.home-button {
+    background-color: transparent;
+    border: 2px solid #000; /* Change this to your preferred color */
+    color: #000; /* Change this to your preferred color */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.home-button:hover {
+    background-color: #000; /* Change this to your preferred hover color */
+    color: #fff; /* Change this to your preferred hover text color */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 200px) {
+    .home-button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
